@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300;400;500;600;700&display=swap');
 
 *{
+    max-width: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -23,6 +24,8 @@ body{
     color: var(--black);
     background: var(--aliceBlue);
 }
+
+                                        /* 1. Barra de navegação */
 
 .navigation{
     display: flex;
@@ -53,8 +56,8 @@ body{
     font-size: 17px;
     font-weight: 500;
     transition: all 0.5s;
-    text-decoration: underline;
-    font-style: italic;
+    /* text-decoration: underline; */
+    /* font-style: italic; */
 }
 
 .navigation ul li a:hover{
@@ -87,70 +90,223 @@ body{
     background: var(--darkCyan);
 }
 
+                                        /* 2. Seção HOME */
+
 .home{
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 12%;
+    padding: 0px 10%;
+    min-height: 900px;
+    background: #d2fffe;
 }
 
 .home-text{
     max-width: 37rem;
 }
 
-.home-text .text-h4{
-    font-size: 1.5rem;
+.home-text-h4{
+    font-size: 2rem;
     color: var(--darkCyan);
-    margin-bottom: 1rem;
+    padding: 0px 0px 10% 0px;
 }
 
-.home-text .text-h1{
-    width: 90%;
-    font-size: 4.3rem;
-    margin-bottom: 1rem;
+.home-text-h1{
+    width: 100%;
+    font-size: 4em;
+    padding: 0px 0px 20% 0px;
     line-height: 4.3rem;
     text-align: left;
 }
 
-.home-text p{
-    margin-bottom: 4rem;
-}
-
-.home-btn {
+.home-button {
     padding: 15px 45px;
     background: var(--darkCyan);
-    color: var(--aquamarine);
+    color: var(--aliceBlue);
     border-radius: 10px;
     font-weight: 1000;
     transition: all 0.5s;
 }
 
-.home-btn:hover{
-    background: var(--deepSkyBlue)
+.home-button:hover{
+    background: var(--deepSkyBlue);
 }
 
-.home-img .perfil-photo{
-    display: block;
-    padding: 40px;
-    width: 125%;
+.home-img {
+    padding: 40px 0px 0px 0px;
+    width: 55%;
 }
 
-.home-img .perfil-photo-mobile{
-    display: none;
+                                        /* 3. Seção ABOUT ME */
+
+.aboutMe {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 5% 0px 0px;
+    min-height: 900px;
+    background: #d2fffe;
 }
 
-.aboutMe, .curriculum, .contact {
-    min-height: 100vh;
+.aboutMe-text .aboutMe-paragraph1, .aboutMe-paragraph2, .aboutMe-paragraph3, .aboutMe-paragraph4, .aboutMe-paragraph5 {
     display: flex;
     justify-content: center;
+    text-align: justify;
     align-items: center;
-    font-size: 10em;
-    text-transform: uppercase;
-    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    /* padding: 30px 0px 0px 40px; */
+    margin: 30px 0px 0px 40px;
+}
+
+                                        /* 4. Seção CURRICULUM */
+
+.curriculum {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 5% 0px 5%;
+    min-height: 980px;
+    background: #d2fffe;
+}
+
+.curriculum-text {
+    font-size: 1.2rem;
+}
+
+.curriculum-paragraph1, .curriculum-paragraph2, .curriculum-paragraph3, .curriculum-paragraph4 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    padding: 1.3rem 0px;
+}
+
+.curriculum-img {
+    height: 650px;
+}
+
+.tecnologias {
+    display: flex;
+}
+
+.tecnologias p {
+    padding: 2rem 0px 0px 0px;
+    font-size: 1.5rem;
+}
+
+@keyframes updown {
+    0% {
+        transform: translateY(-5%);
+    }
+    
+    50% {
+        transform: translateY(5%);
+    }
+    
+    100% {
+        transform: translateY(-5%);
+    }
+}
+
+#html-icon, #css-icon, #javascript-icon {
+    font-size: 6rem;
+    flex-direction: row;
+    animation: updown 1s ease infinite;
+}
+
+#html-icon {
+    color: #FF5733;
+}
+
+#css-icon {
+    color: #2965f1;
+}
+
+#javascript-icon {
+    color: #f0db4f;
+}
+
+.curriculum-img {
+    max-width: 450px;
+}
+
+                                        /* 5. Seção Contatos */
+
+.contact {
+    max-width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5% 5% 0px 5%;
+    min-height: 900px;
+    background: #d2fffe;
+}
+
+.social {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5% 0px 5% 5%;
+    list-style: none;
+    flex-direction: row;
+}
+
+.social-title {
+    font-size: 6rem;
+    text-align: center;
+    font-weight: bold;
+    padding: 0px 0px 10% 0px;
     color: var(--darkCyan);
 }
+
+.social-buttons {
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linkedin-color, .github-color, .whatsapp-color, .instagram-color, .twitter-color {
+    color: var(--black);
+}
+
+#linkedin-icon, #github-icon, #whatsapp-icon, #instagram-icon, #twitter-icon {
+    list-style: none;
+    flex-direction: row;
+    font-size: 6rem;
+    
+}
+
+#linkedin-icon:hover {
+    transform: scale(1.8);
+    color: var(--deepSkyBlue);
+
+}
+
+#github-icon:hover {
+    transform: scale(1.8);
+}
+
+#whatsapp-icon:hover {
+    transform: scale(1.8);
+    color: 	#075E54;
+}
+
+#instagram-icon:hover {
+    transform: scale(1.8);
+    color: #cd486b;
+}
+
+#twitter-icon:hover {
+    transform: scale(1.8);
+    color: #00acee;
+}
+
+                                        /* RESPONSIVE AREA */
 
 @media (max-width:785px) {
     .navigation {
@@ -202,15 +358,23 @@ body{
         text-align: center;
         overflow: hidden;
         gap: 5rem;
+        min-height: 150px;
     }
 
     .home .text-h4 {
-        font-size: 15px;
+        font-size: 20px;
     }
 
     .home .text-h1 {
-        font-size: 2.5rem;
+        font-size: 1.7rem;
         line-height: 3rem;
+        text-align: center;
+        padding: 0% 25% 0% 0%;
+    }
+
+    .home-btn {
+        font-size: 12px;
+        line-height: 5rem;
         text-align: center;
     }
 
@@ -218,16 +382,8 @@ body{
         font-size: 15px;
     }
 
-    /* Alterar Imagem da versão */
-
     .home-img .perfil-photo{
         display: none;
-    }
-
-    .home-img .perfil-photo-mobile{
-        display: block;
-        width: 100%;
-        margin-top: -20%;
     }
 
     .aboutMe {
@@ -240,6 +396,20 @@ body{
         line-height: 3rem;
         text-align: center;
     }
+
+    .aboutMe .aboutMe-text .aboutMe-paragraph1, .aboutMe-paragraph2, .aboutMe-paragraph3, .aboutMe-paragraph4, .aboutMe-paragraph5 {
+        display: flex;
+        justify-content: center;
+        text-align: justify;
+        align-items: center;
+        font-size: 1.0rem;
+        margin-bottom: 1rem;
+    }
+
+    .aboutMe-img .perfil-photo-about {
+        display: none;
+    }
+
     .curriculum {
         padding: 100px 2%;
         flex-direction: column;
@@ -250,6 +420,12 @@ body{
         line-height: 3rem;
         text-align: center;
     }
+
+    .curriculum-img .perfil-photo-curriculum{
+        display: none;
+    }
+
+
     .contact {
         padding: 100px 2%;
         flex-direction: column;
@@ -259,5 +435,46 @@ body{
         font-size: 2.5rem;
         line-height: 3rem;
         text-align: center;
+    }
+
+    .social-title {
+        font-size: 4rem;
+    }
+
+    .social-buttons {
+        flex-direction: column;
+        font-size: 1rem;
+        padding: 0%;
+    }
+
+    #linkedin-icon, #github-icon, #whatsapp-icon, #instagram-icon, #twitter-icon {
+        list-style: none;
+        flex-direction: row;
+        font-size: 4rem;
+    }
+
+    #linkedin-icon:hover {
+        transform: scale(1);
+        color: var(--deepSkyBlue);
+    
+    }
+    
+    #github-icon:hover {
+        transform: scale(1);
+    }
+    
+    #whatsapp-icon:hover {
+        transform: scale(1);
+        color: 	#075E54;
+    }
+    
+    #instagram-icon:hover {
+        transform: scale(1);
+        color: #cd486b;
+    }
+    
+    #twitter-icon:hover {
+        transform: scale(1);
+        color: #00acee;
     }
 }

@@ -5,3 +5,5 @@ menu.addEventListener('click', () => {
     menu.classList.toggle('ativo')
     navMenu.classList.toggle('ativo')
 })
+
+// BOTÕES E EVENTOS DE CLICK

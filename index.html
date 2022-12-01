@@ -10,6 +10,9 @@
 </head>
 <body>
     <header>
+
+        <!-- 1. Barra de navegação -->
+
         <nav class="navigation">
             <a href="#" class="logo">João Henrique</a>
             <ul class="nav-menu">
@@ -17,31 +20,127 @@
                 <li class="nav-item"><a href="#aboutMe">Sobre mim</a></li>
                 <li class="nav-item"><a href="#curriculum">Currículo</a></li>
                 <li class="nav-item"><a href="#contact">Contato</a></li>
-                <i class='bx bxs-arrow-to-top'><br>Voltar ao topo</i>
             </ul>
-            <div class="menu">
+            <menu class="menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
                 <span class="bar"></span>
-            </div>
+            </menu>
         </nav>
     </header>
     <main>
+
+        <!-- 2. Seção HOME -->
+
         <section id="home" class="home">
-            <div class="home-text">
-                <h4 class="text-h4">Seja bem-vindo a minha página!</h4>
-                <h1 class="text-h1">Um eterno estudante em busca do seu primeiro emprego!</h1>
-                <p>Atualmente me dedico ao JavaScript, HTML e CSS.</p>
-                <a href="#aboutMe" class="home-btn">Quer me conhecer melhor?</a>
-            </div>
-            <div class="home-img">
-                <img src="img\euMostrandoSemFundo.png" class="perfil-photo">
-                <img src="img\euOlhandoPraCima.png" class="perfil-photo-mobile">
-            </div>
+            <article class="home-text">
+                <h4 class="home-text-h4">Seja bem-vindo a minha página!</h4>
+                <h1 class="home-text-h1">Um eterno estudante em busca da minha primeira oportunidade de carreira!</h1>
+                <a class="home-button" href="https://wa.me/5534993073565?text=Oi João tudo bem? Meu nome é */*/*coloque seu nome aqui*/*/*, te encontrei pelo seu site de apresentação e gostaria de te conhecer melhor! :)" target="_blank">
+                    Quer me conhecer melhor? Chama no zap!
+                </a>
+            </article>
+            <img src="img\euMostrandoSemFundo.png" class="home-img">
         </section>
-        <section id="aboutMe" class="aboutMe">ABOUT ME</section>
-        <section id="curriculum" class="curriculum">CURRICULUM AQUI</section>
-        <section id="contact" class="contact">CONTATOS</section>
+
+        <!-- 3. Seção ABOUT ME -->
+
+        <section id="aboutMe" class="aboutMe">
+            <img src="img\euApontandoSemFundo.png" class="aboutMe-img">
+            <article class="aboutMe-text">
+                <p class="aboutMe-paragraph1">Eaí meu caro visitante tudo certo? Tenho 26 anos e sou mineiro, nascido e residente de Uberlândia. Desde moleque sempre estive ligado a informática mas nunca havia pensado em me profissionalizar na área.</p>
+                <p class="aboutMe-paragraph2">Sou formado em direito (2019) mas não consegui me identificar com a profissão em si, foi quando eu tomei a decisão de migrar para a área de tecnologia onde sempre estive ligado a maior parte de minha vida.</p>
+                <p class="aboutMe-paragraph3">Este último ano de aprendizado tem sido incrível pra mim, estou "aprendendo a aprender" no universo da programação e tem sido desafiador e motivador ao mesmo tempo.</p>
+                <p class="aboutMe-paragraph4">No final de 2022 termino o curso de Análise e Desenvolvimento de Sistemas e atualmente estou estudando muito sobre front-end (HTML, CSS, JavaScript). Minha vontade é ir além aprendendo e dominando as tecnologias necessárias da minha área para desempenhar minha função com qualidade.</p>
+                <p class="aboutMe-paragraph5">Atuamente estou em busca de uma oportunidade na área, sou professor de Fitdance também e curto passar a maior parte do meu tempo jogando no PC e patinar nas horas vagas.</p>
+            </article>
+        </section>
+
+        <!-- 4. Seção CURRICULUM -->
+
+        <section id="curriculum" class="curriculum">
+            <div class="curriculum-text">
+                <li>
+                    <p class="curriculum-paragraph1">&#x2713; Experiência</p>
+                    <p class="curriculum-paragraph1-1">&#x25B8; Estagiário no departamento jurídico do Departamento de Água e Esgoto (DMAE) durante 2 anos. Atuei tecendo defesas processuais, cobranças jurídicas e realizando todas as diligências necessárias no âmbito jurídico (cargas processuais, participações de audiências, etc...);</p>
+                    <p class="curriculum-paragraph1-2">&#x25B8; Auxiliar administrativo nas empresas Buyate Contabilidade e ADM Condomínios durante 1 ano e meio. Prestava apoio administrativo atendendo clientes, tecendo todos os documentos pertinentes da área condominial e contábil (livros fiscais), participações de assembleias, etc...;</p>
+                    <p class="curriculum-paragraph1-3">&#x25B8; Instrutor Fitdance desde maio/2022.</p>
+                </li>
+                <li>
+                    <p class="curriculum-paragraph2">&#x2713; Formação</p>
+                    <p class="curriculum-paragraph2-1">&#x25B8; Bacharel em direito (2014 - 2019) pela faculdade UNIPAC;</p>
+                    <p class="curriculum-paragraph2-2">&#x25B8; Curso Superior de Tecnologia (CST) em Análise e Desenvolvimento de Sistemas (2022) pela faculdade UNOPAR/PITÁGORAS, previsão de conclusão em DEZ/2022;</p>
+                    <p class="curriculum-paragraph2-3">&#x25B8; Curso de JavaScript (Roger Melo) previsão de conclusão FEV/2023.</p>
+                </li>
+                <p class="curriculum-paragraph3">&#x2713; Tecnologias</p>
+                <li class="tecnologias">
+                    
+                    <i class='bx bxl-html5' id="html-icon"></i>
+                    <p class="html-paragraph">HTML 5</p>
+                    <i class='bx bxl-css3' id="css-icon"></i>
+                    <p class="css-paragraph">CSS3</p>
+                    <i class='bx bxl-javascript' id="javascript-icon"></i>
+                    <p class="javascript-paragraph">JavaScript</p>
+                </li>
+                <li>
+                    <p class="curriculum-paragraph4">&#x2713; Habilidades pessoais</p>
+                    <p class="curriculum-paragraph4-1">&#x25B8; Inglês intermediário;</p>
+                    <p class="curriculum-paragraph4-2">&#x25B8; Informática Avançada.</p>
+                    <p class="curriculum-paragraph4-3">&#x25B8; Comunicação assertiva;</p>
+                    <p class="curriculum-paragraph4-4">&#x25B8; Maleabilidade para aprendizado de novas tecnologias;</p>
+                    <p class="curriculum-paragraph4-5">&#x25B8; CNH B.</p>
+                    <p class="curriculum-paragraph4-5">&#x25B8; Licença de Instrutor Fitdance ativa</p>
+                </li>
+            </div>
+                <img src="img\euBraçosCruzadosSemFundo.png" class="curriculum-img">
+
+        </section>
+
+        <!-- 5. Seção CONTACT -->
+
+        <section id="contact" class="contact">
+            <div>
+                <h2 class="social-title">Contatos</h2>
+                <div class="social-buttons">
+                    <li class="linkedin">
+                        <a class="linkedin-color" href="https://www.linkedin.com/in/jo%C3%A3o-henrique-corrales-p%C3%B3voa-039848216/" target="_blank">
+                            <i class='bx bxl-linkedin-square' id="linkedin-icon" ></i>
+                        </a>
+                    </li>
+                    <p class="linkedin-paragraph">Linkedin</p>
+
+                    <li class="github">
+                        <a class="github-color" href="https://github.com/SonimxD" target="_blank">
+                            <i class='bx bxl-github' id="github-icon" ></i>
+                        </a>
+                    </li>
+                        <p class="github-paragraph">Github</p>
+
+                    <li class="whatsapp">
+                        <a class="whatsapp-color" href="https://wa.me/5534993073565?text=Oi João tudo bem? Meu nome é */*/*coloque seu nome aqui*/*/*, te encontrei pelo seu site de apresentação e gostaria de te conhecer melhor! :)" target="_blank">
+                            <i class='bx bxl-whatsapp' id="whatsapp-icon"></i>
+                        </a>
+                    </li>
+                        <p class="whatsapp-paragraph">Whatsapp</p>
+
+                    <li class="instagram">
+                        <a class="instagram-color" href="https://www.instagram.com/joaohcorrales/" target="_blank">
+                            <i class='bx bxl-instagram' id="instagram-icon"></i>
+                        </a>
+                    </li>
+                        <p class="instagram-paragraph">Instagram</p>
+                        
+                    <li class="twitter">
+                        <a class="twitter-color" href="https://twitter.com/SonimxD" target="_blank">
+                            <i class='bx bxl-twitter' id="twitter-icon"></i>
+                        </a>
+                    </li>
+                        <p class="twitter-paragraph">Twitter</p>
+                </div>
+
+            </div>
+
+        </section>
     </main>
     <script src="./script.js"></script>
 </body>
