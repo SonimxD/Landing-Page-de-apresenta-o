@@ -1,5 +1,16 @@
 Olá visitante! Seja bem-vindo ao meu projeto de landing page de apresentação. Antes de mais nada, quero deixar aqui o link dos vídeos que utilizei como inspiração para começar este projeto. Agradecimentos diretamente aos autores dos vídeos!
 
+//////////////////////////////////////////////////////
+
+ATUALIZAÇÃO!!! 
+
+Você pode acessar a landingpage que eu fiz neste link:
+
+https://sonimxd.github.io/Landing-Page-de-apresenta-o/
+
+Vou continuar a melhorar ele e adicionar novas coisas ao longo do tempo :)
+///////////////////////////////////////////////////////
+
 Nome do Canal: DEV Envolvente
 link: https://www.youtube.com/watch?v=G8rUCF3BY6s&t=746s
 
