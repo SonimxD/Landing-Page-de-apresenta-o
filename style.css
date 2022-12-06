@@ -134,13 +134,13 @@ body{
 }
 
 .home-img {
-    padding: 40px 0px 0px 0px;
-    width: 55%;
+    padding: 70px 0px 0px 0px;
+    height: 900px;
 }
 
                                         /* 3. Seção ABOUT ME */
 
-.aboutMe {
+.aboutMeSection {
     max-width: 100%;
     display: flex;
     align-items: center;
@@ -150,16 +150,49 @@ body{
     background: #d2fffe;
 }
 
-.aboutMe-text .aboutMe-paragraph1, .aboutMe-paragraph2, .aboutMe-paragraph3, .aboutMe-paragraph4, .aboutMe-paragraph5 {
+.aboutMe-img {
+    height: 850px;
+}
+
+.aboutMe-text {
+    display: flex;
+    flex-direction: column;
+    color: var(--black);
+}
+
+.container {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    line-height: 1.4rem;
+    box-shadow: 0 0 1rem rgba(0, 0, 0,.1);
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-justify: auto;
+}
+
+.read-more-button {
+    color: var(--darkCyan);
+    cursor: pointer;
+}
+
+.read-more-text {
+    display: none;
+}
+
+.read-more-text--show {
+    display: inline;
+}
+
+/* .aboutMe-text .aboutMe-paragraph1, .aboutMe-paragraph2, .aboutMe-paragraph3, .aboutMe-paragraph4, .aboutMe-paragraph5 {
     display: flex;
     justify-content: center;
     text-align: justify;
     align-items: center;
     font-size: 1.5rem;
     line-height: 2rem;
-    /* padding: 30px 0px 0px 40px; */
     margin: 30px 0px 0px 40px;
-}
+} */
 
                                         /* 4. Seção CURRICULUM */
 
@@ -174,7 +207,7 @@ body{
 }
 
 .curriculum-text {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 .curriculum-paragraph1, .curriculum-paragraph2, .curriculum-paragraph3, .curriculum-paragraph4 {
@@ -184,7 +217,7 @@ body{
 }
 
 .curriculum-img {
-    height: 650px;
+    height: 750px;
 }
 
 .tecnologias {
@@ -226,10 +259,6 @@ body{
 
 #javascript-icon {
     color: #f0db4f;
-}
-
-.curriculum-img {
-    max-width: 450px;
 }
 
                                         /* 5. Seção Contatos */
@@ -277,7 +306,7 @@ body{
 #linkedin-icon, #github-icon, #whatsapp-icon, #instagram-icon, #twitter-icon {
     list-style: none;
     flex-direction: row;
-    font-size: 6rem;
+    font-size: 5rem;
     
 }
 
